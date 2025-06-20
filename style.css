@@ -1,117 +1,88 @@
-/* === GENERAL RESET === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
   color: #333;
 }
 
-/* === NAVBAR === */
-.navbar-brand {
-  font-weight: bold;
-  font-size: 1.25rem;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 2px solid #eee;
 }
 
-.navbar-nav .btn {
-  font-size: 14px;
-  padding: 8px 14px;
+header h1 a {
+  text-decoration: none;
+  color: #222;
 }
 
-/* LinkedIn Logo Image */
-.navbar-nav img {
-  height: 40px;
+.button {
+  background-color: #0073e6;
+  color: white;
+  padding: 10px 16px;
   border-radius: 6px;
-  transition: transform 0.2s ease;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
 }
 
-.navbar-nav img:hover {
-  transform: scale(1.05);
+.linkedin img {
+  border-radius: 5px;
 }
 
-/* === INTRO SECTION === */
 .intro {
-  background-color: #ffc0cb;
-  padding: 40px 20px;
+  background-color: pink;
+  padding: 20px;
   border-radius: 10px;
-  margin: 40px auto;
-  max-width: 900px;
+  margin: 30px 0;
   text-align: center;
 }
 
 .intro img {
-  border-radius: 50%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.section-title {
+  font-size: 28px;
   margin-bottom: 20px;
 }
 
-.intro p {
-  font-size: 17px;
-  line-height: 1.6;
-  margin-bottom: 25px;
-}
-
-.intro ul {
-  list-style-type: disc;
-  text-align: left;
-  padding-left: 40px;
-  margin: 0 auto;
-  max-width: 600px;
-}
-
-/* === BLOG SECTION === */
-.section-title {
-  font-size: 30px;
-  font-weight: 600;
-  margin: 40px 0 20px;
-  text-align: center;
+.blog-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .blog-post {
-  background-color: #fff;
+  display: flex;
+  gap: 20px;
+  background-color: white;
+  padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  padding: 20px;
-  margin-bottom: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .blog-post img {
-  max-width: 100%;
-  height: auto;
+  max-height: 120px;
   border-radius: 8px;
-  margin-bottom: 15px;
 }
 
-.blog-post h3 {
+.blog h3 {
+  margin: 0;
   color: #0073e6;
-  margin-bottom: 5px;
 }
 
-.blog-post h4 {
+.blog h4 {
+  margin: 5px 0 10px 0;
   font-weight: normal;
   color: #444;
-  margin-bottom: 15px;
 }
 
-.blog-post p {
-  font-size: 15px;
-  line-height: 1.7;
-}
-
-/* === MEDIA QUERIES === */
-@media (max-width: 768px) {
-  .intro ul {
-    padding-left: 20px;
-  }
-
-  .blog-post {
-    padding: 15px;
-  }
-
-  .navbar-nav .btn {
-    margin-bottom: 10px;
-  }
+.blog p {
+  margin: 0;
 }
